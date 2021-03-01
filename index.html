@@ -26,16 +26,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>CORE</p>
+  <a href="#database" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-database  w3-xxlarge"></i>
+    <p>Database</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
+  <a href="#download" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-download  w3-xxlarge"></i>
     <p>Download</p>
   </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
+  <a href="#Citation" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-bullhorn w3-xxlarge"></i>
+    <p>Citation</p>
+  </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-users  w3-xxlarge"></i>
     <p>About us</p>
   </a>
 </nav>
@@ -44,7 +48,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#database" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
@@ -52,15 +56,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
+
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo">piRNA-IPdb</h1>
     <p>version 2</p>
-    <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    <img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-94-017-7417-8_4/MediaObjects/316046_1_En_4_Fig1_HTML.gif" alt="piRNA" class="w3-image" width="600" height="720">
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="database">
     <h2 class="w3-text-light-grey">What is a piRNA</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -74,54 +79,79 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">Database statistics</h3>
+    
+    <p>
+    The idea was originaly apply by Larriba et All [1] 
+
+    </p>
+    
+    
+<!-- Database Section -->
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="download">
+
+	<h2 class="w3-padding-16 w3-text-light-grey">Database statistics </h2>
+
+   </div>
    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey" id="download">
+    
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">41584654+</span><br>
+        <span class="w3-xlarge">23</span><br>
+        Full datasets
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">18,904,992 </span><br>
         Sequences
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">23+</span><br>
-        Datasets
-      </div>
-      <div class="w3-quarter w3-section">
         <span class="w3-xlarge">15613561+</span><br>
-        Reads asses
+        Reads 
       </div>
       <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
+        <span class="w3-xlarge">A+++</span><br>
+        Quality
       </div>
     </div>
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
+      <i class="fa fa-download"></i> Download database
     </button>
     
 
     </div>
+
+  <!-- Citation Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Citation">
+    <h2 class="w3-text-light-grey">Cite this work</h2>
+    <hr style="width:200px" class="w3-opacity">
     
+    <p>First release:</p>
+    <p>
+        Larriba, E., del Mazo, J. An integrative piRNA analysis of mouse gametes and zygotes reveals new potential origins and gene regulatory roles. Sci Rep 8, 12832 (2018). https://doi.org/10.1038/s41598-018-31032-1
+    </p>
+    
+        <p>Present work:</p>
+    <p>
+        Paper in preparation
+    </p>
+
+  <!-- End Citation Section -->
  
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <h2 class="w3-text-light-grey">About us</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-building-o  fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> CIB Margarita Salas, CSIC</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Madrid, Spain</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone:0034 +other numbers </p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: odei.barrenada@cib.csic.es </p>
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
+    
+   
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
