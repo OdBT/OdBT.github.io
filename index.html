@@ -4,25 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222 ;}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;
+background: #ffeeee }
+.w3-sidebar {
+  width: 100px;
+  background: #900;
+  
+  }
+  
+
+hr { background-color: black; height: 1px; border: 0; width:400px;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-<body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="https://digital.csic.es/retrieve/1576331" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-arrow-up  w3-xxlarge"></i>
     <p>HOME</p>
   </a>
@@ -42,9 +45,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-users  w3-xxlarge"></i>
     <p>About us</p>
   </a>
+    <!-- Avatar image in top left corner -->
+    <img src="https://digital.csic.es/retrieve/1576331" style="width:100%;" >
 </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<!-- Navbar on small screens (Hidden on medium and large screens) 
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
@@ -54,23 +59,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">About us</a>
   </div>
 </div>
-
+-->
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
 
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-16 w3-center w3-black" id="home">
+  <header class="w3-container w3-padding-16 w3-center" id="home">
     <h1 class="w3-jumbo">piRNA InmunoPrecipitation database </h1>
     <p>piRNA-IPdb v2</p>
-    <img src="images/piRNA-PIWI.png" alt="piRNA" class="w3-image" width="600" height="720">
+    <img src="images/piRNA-PIWI.png" alt="piRNA" style="border:3px solid black;" class="w3-image" width="600" height="720">
   </header>
 
+
   <!-- Database Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="database">
-    <h2 class="w3-text-light-grey">What is a piRNA</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>PIWI-interacting RNAs (piRNAs) are single-stranded
-small non-coding RNAs discovered in germ cells with
+  <div class="w3-content w3-justify w3-text-black w3-padding-16" id="database">
+    <h2 class="w3-text-black">What is a piRNA</h2>
+    <hr>
+    <p>PIWI-interacting RNAs (<b>piRNAs</b>) are single-stranded
+small non-coding RNAs initially discovered in germ cells with
 a role as defenders of genomic integrity in the
 germline, acting as post-transcriptional repressors of
 transposable elements. With a regular range around
@@ -85,8 +91,8 @@ functions indicating its high plasticity and pleiotropic
 activity
     </p>
     
-    <h2 class="w3-text-light-grey">Database</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h2 class="w3-text-black">Database</h2>
+    <hr>
     <p>
     We selected those piRBase datasets obtained by immunoprecipitation from wild-type mice. Using a
 custom bioinformatic pipeline we analyze and calculate each piRNA count per million for every
@@ -97,7 +103,7 @@ dataset when these data were available.
     </p>
     
         <p>
-In total, 23 datasets were selected (Table 1) resulting in
+In total, 23 datasets were selected resulting in
 18,904,992 unique sequences that were detected bound
 to any PIWI protein. It should be noted that the focus of
 piRNA studies and sequencing has been on the germline
@@ -109,47 +115,51 @@ distinct embryonic stages), in different biological samples
 protein (MIWI, MILI or MIWI2).
     </p>
     
+    <div>
+    <img src="images/DatasetInfo.png" alt="piRNA" style="border:3px solid black;" class="w3-image" width=80% height="720">
+    </div>
     
 <!-- Download Section -->
 
-  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="download">
+  <div class="w3-content w3-justify w3-text-black w3-padding-16" id="download">
 
-	<h2 class="w3-padding-16 w3-text-light-grey">Database statistics </h2>
-    <hr style="width:200px" class="w3-opacity">
+	<h2 class="w3-padding-16 w3-text-black">Database statistics </h2>
+    <hr>
 
    </div>
    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey" id="download">
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-white" id="download">
     
-      <div class="w3-quarter w3-section">
+      <div class="w3-third w3-section">
         <span class="w3-xlarge">23</span><br>
         Full datasets
       </div>
-      <div class="w3-quarter w3-section">
+      <div class="w3-third w3-section">
         <span class="w3-xlarge">18,904,992 </span><br>
         Sequences
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">115650683</span><br>
+      <div class="w3-third w3-section">
+        <span class="w3-xlarge">115,650,683</span><br>
         Reads 
       </div>
-      <div class="w3-quarter w3-section">
+<!--      <div class="w3-quarter w3-section">
         <span class="w3-xlarge">A+++</span><br>
         Quality
       </div>
+      -->
     </div>
 
 	  
-    <button class="w3-button w3-light-grey w3-section" onclick="window.location.href='https://drive.google.com/u/0/uc?id=1T7vrl2n-iiK4oUit8k7jJLcYd3Vfb-_2&export=download';">
+    <button class="w3-button w3-white w3-section" onclick="window.location.href='https://drive.google.com/u/0/uc?id=1T7vrl2n-iiK4oUit8k7jJLcYd3Vfb-_2&export=download';">
       <i class="fa fa-download"> </i> Download database
     </button>
     
     </div>
 
   <!-- Citation Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="Citation">
-    <h2 class="w3-text-light-grey">Cite this work</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <div class="w3-content w3-justify w3-text-black w3-padding-16" id="Citation">
+    <h2 class="w3-text-black">Cite this work</h2>
+    <hr>
     
     <p>First release:</p>
     <p>
@@ -163,7 +173,8 @@ protein (MIWI, MILI or MIWI2).
 
 	  <p>Image:</p>
     <p>
-    Tóth K.F., Pezic D., Stuwe E., Webster A. (2016) The piRNA Pathway Guards the Germline Genome Against Transposable Elements. In: Wilhelm D., Bernard P. (eds) Non-coding RNA and the Reproductive System. Advances in Experimental Medicine and Biology, vol 886. Springer, Dordrecht. https://doi.org/10.1007/978-94-017-7417-8_4 
+Yamaguchi, S., Oe, A., Nishida, K.M. et al. Crystal structure of Drosophila Piwi. Nat Commun 11, 858 (2020). 
+https://doi.org/10.1038/s41467-020-14687-1
     </p>  
 	  
 	  
@@ -172,15 +183,14 @@ protein (MIWI, MILI or MIWI2).
  
 
   <!-- Contact Section -->
-  <div class="w3-padding-16 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">About us</h2>
-    <hr style="width:200px" class="w3-opacity">
+  <div class="w3-padding-16 w3-content w3-text-black" id="contact">
+    <h2 class="w3-text-black">About us</h2>
+    <hr>
 
     <div class="w3-section">
-      <p><i class="fa fa-building-o  fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> CIB Margarita Salas, CSIC</p>
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Madrid, Spain</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone:0034 +other numbers </p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: odei.barrenada@cib.csic.es </p>
+      <p><i class="fa fa-home  fa-fw w3-xxlarge w3-margin-right"></i> CIB Margarita Salas, CSIC</p>
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> C/ Ramiro de Maeztu 9, Madrid, Spain</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: odei.barrenada@cib.csic.es & jdelmazo@cib.csic.es </p>
     </div><br>
     
       </p>
@@ -189,9 +199,9 @@ protein (MIWI, MILI or MIWI2).
   </div>
   
     <!-- Footer -->
-  <footer class="w3-content w3-padding-16 w3-text-grey w3-xlarge">
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <footer class="w3-content w3-padding-16 w3-text-black w3-xlarge">
+    <a href="https://twitter.com/CIB_CSIC"> <i class="fa fa-twitter w3-hover-opacity"></i>
+    <a href="https://www.cib.csic.es/es"><i class="fa fa-linkedin w3-hover-opacity"></i>
     <p class="w3-medium">Thanks to <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <!-- End footer -->
   </footer>
