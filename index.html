@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>	
+<head>
 <title>piRNA InmunoPrecipitation databaseb</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +14,9 @@ background: #ffeeee }
 .w3-sidebar {
   width: 100px;
   background: #900;
-  
+
   }
-  
+
 
 hr { background-color: black; height: 1px; border: 0; width:400px;}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
@@ -31,12 +31,12 @@ hr { background-color: black; height: 1px; border: 0; width:400px;}
   gtag('js', new Date());
 
   gtag('config', 'G-HDD1CM01C7');
-</script>	
-	
-</head>	
+</script>
+
+</head>
 
 <body>
-	
+
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
 
@@ -60,7 +60,7 @@ hr { background-color: black; height: 1px; border: 0; width:400px;}
     <i class="fa fa-users  w3-xxlarge"></i>
     <p>About us</p>
   </a>
-	
+
     <!-- Avatar image in top left corner -->
     <a href="https://www.cib.csic.es/">
     <img src="https://digital.csic.es/retrieve/1576331" class="w3-hover-opacity" style="width:100%;" >
@@ -68,7 +68,7 @@ hr { background-color: black; height: 1px; border: 0; width:400px;}
 
 </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) 
+<!-- Navbar on small screens (Hidden on medium and large screens)
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
@@ -86,9 +86,15 @@ hr { background-color: black; height: 1px; border: 0; width:400px;}
   <header class="w3-container w3-padding-16 w3-center" id="home">
     <h1 class="w3-jumbo">piRNA InmunoPrecipitation database </h1>
     <p>(piRNA-IPdb v2)</p>
-    <img src="images/piRNA-PIWI.png" alt="piRNA" style="border:3px solid black;" class="w3-image" width="600" height="720">	  
+    <img src="images/piRNA-PIWI.png" alt="piRNA" style="border:3px solid black;" class="w3-image" width="600" height="720">
   </header>
 
+
+  <link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">
+
+  <script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script>
+
+  
 	<table id="table_id" class="display">
     <thead>
         <tr>
@@ -108,8 +114,8 @@ hr { background-color: black; height: 1px; border: 0; width:400px;}
     </tbody>
 </table>
 
-	
-	
+
+
   <!-- Database Section -->
   <div class="w3-content w3-justify w3-text-black w3-padding-16" id="database">
     <h2 class="w3-text-black">What is a piRNA</h2>
@@ -128,7 +134,7 @@ detected in somatic cells with diverse potential
 functions indicating its high plasticity and pleiotropic
 activity.
     </p>
-    
+
     <h2 class="w3-text-black">Database</h2>
     <hr>
     <p>
@@ -137,7 +143,7 @@ custom bioinformatic pipeline we analyze and calculate each piRNA count per mill
 dataset when these data were available. As applied in first version [1].
 
     </p>
-    
+
         <p>
 In total, 23 datasets were selected resulting in
 18,904,992 unique sequences that were detected as bound
@@ -150,11 +156,11 @@ distinct embryonic stages), in different biological samples
 (testes or spermatids) and bound to different PIWI
 protein (MIWI, MILI or MIWI2).
     </p>
-    
+
     <div>
     <img src="images/DatasetInfo.png" alt="piRNA" style="border:3px solid black;" class="w3-image" width=80% height="720">
     </div>
-    
+
 <!-- Download Section -->
 
   <div class="w3-content w3-justify w3-text-black w3-padding-16" id="download">
@@ -163,9 +169,9 @@ protein (MIWI, MILI or MIWI2).
     <hr>
 
    </div>
-   
+
     <div class="w3-row w3-center w3-padding-16 w3-section w3-white" id="download">
-    
+
       <div class="w3-third w3-section">
         <span class="w3-xlarge">23</span><br>
         Full datasets
@@ -176,7 +182,7 @@ protein (MIWI, MILI or MIWI2).
       </div>
       <div class="w3-third w3-section">
         <span class="w3-xlarge">115,650,683</span><br>
-        Reads 
+        Reads
       </div>
 <!--      <div class="w3-quarter w3-section">
         <span class="w3-xlarge">A+++</span><br>
@@ -185,7 +191,7 @@ protein (MIWI, MILI or MIWI2).
       -->
     </div>
 
-	  
+
     <button class="w3-button w3-white w3-section" onclick="window.location.href='https://drive.google.com/file/d/1NqSfGcrBSMYLfOyUaJ10djiQem7ZUfWE&export=download';">
       <i class="fa fa-download"> </i> Download Fasta file
     </button>
@@ -193,19 +199,19 @@ protein (MIWI, MILI or MIWI2).
     <button class="w3-button w3-white w3-section" onclick="window.location.href='https://drive.google.com/file/d/1NftShKgHb7ywEVFCI1q6uoQpaZdnGrLz';">
       <i class="fa fa-download"> </i> Download BED file
     </button>
-    
+
     </div>
 
   <!-- Citation Section -->
   <div class="w3-content w3-justify w3-text-black w3-padding-16" id="Citation">
     <h2 class="w3-text-black">Cite this work</h2>
     <hr>
-    
+
     <p>First release:</p>
     <p>
       [1] Larriba, E., del Mazo, J. An integrative piRNA analysis of mouse gametes and zygotes reveals new potential origins and gene regulatory roles. Sci Rep 8, 12832 (2018). https://doi.org/10.1038/s41598-018-31032-1
     </p>
-    
+
         <p>Present work:</p>
     <p>
         Paper in preparation
@@ -213,14 +219,14 @@ protein (MIWI, MILI or MIWI2).
 
 	  <p>Image:</p>
     <p>
-[2] Yamaguchi, S., Oe, A., Nishida, K.M. et al. Crystal structure of Drosophila Piwi. Nat Commun 11, 858 (2020). 
+[2] Yamaguchi, S., Oe, A., Nishida, K.M. et al. Crystal structure of Drosophila Piwi. Nat Commun 11, 858 (2020).
 https://doi.org/10.1038/s41467-020-14687-1
-    </p>  
-	  
-	  
+    </p>
+
+
 
   <!-- End Citation Section -->
- 
+
 
   <!-- Contact Section -->
   <div class="w3-padding-16 w3-content w3-text-black" id="contact">
@@ -232,12 +238,12 @@ https://doi.org/10.1038/s41467-020-14687-1
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> C/ Ramiro de Maeztu 9, Madrid, Spain</p>
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: odei.barrenada@cib.csic.es & jdelmazo@cib.csic.es </p>
     </div><br>
-    
+
       </p>
     </form>
   <!-- End Contact Section -->
   </div>
-  
+
     <!-- Footer -->
   <footer class="w3-content w3-padding-16 w3-text-black w3-xlarge">
     <a href="https://twitter.com/CIB_CSIC"> <i class="fa fa-twitter w3-hover-opacity"></i>
