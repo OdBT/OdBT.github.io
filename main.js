@@ -1,3 +1,7 @@
+// There is no way to implement js script in github
+
+
+
 /********************* Custom controls script: by Josh *******************/
 
 // Control Variables
